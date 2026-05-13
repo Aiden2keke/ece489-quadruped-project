@@ -1,0 +1,7 @@
+method,source_task,condition,commanded_vx,num_trials,success_rate,controller_failure_rate,mean_CoT,std_CoT,mean_RMS_velocity_error,mean_RMS_roll,mean_RMS_pitch,fall_time_failed_mean,notes
+RL,robustness,friction_low,0.4,10,1.0,0.0,0.5117338873931889,0.0,0.20785628064630107,0.018490495549957027,0.03264745344006297,nan,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,robustness,friction_low,0.4,10,1.0,0.0,2.44506014488815,0.0,0.03489361512838994,0.0069983403785759245,0.032944088146688214,nan,CoT from successful full-length trials only; failed/partial trials excluded
+RL,robustness,payload_high,0.4,10,1.0,0.0,0.5451816782708632,1.1702778228589004e-16,0.16501100265008037,0.030015036234194013,0.04731738984579664,nan,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,robustness,payload_high,0.4,10,1.0,0.0,2.241669229903494,0.0,0.03496866102834968,0.007579175626669167,0.038485456261060945,nan,CoT from successful full-length trials only; failed/partial trials excluded
+RL,robustness,motor_weak,0.4,10,1.0,0.0,0.5708485722428851,0.0,0.15380975817610093,0.029327080942644006,0.033516160025490294,nan,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,robustness,motor_weak,0.4,10,1.0,0.0,2.344665139785715,0.0,0.033495902754821935,0.007261760582305583,0.03774395311008593,nan,CoT from successful full-length trials only; failed/partial trials excluded

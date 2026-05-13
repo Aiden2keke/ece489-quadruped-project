@@ -38,6 +38,12 @@ project_outputs_baseline/eval_logs/
 project_outputs_baseline/train_curves_csv/
 project_outputs_baseline/tensorboard_raw/
 
+# Additional evaluation generated outputs
+project_outputs_additional/RL/*/eval_logs/
+project_outputs_additional/baseline/*/eval_logs/
+project_outputs_additional/tmp_models/
+project_outputs_additional.zip
+
 # Keep figures, summaries, and README files if needed
 !project_outputs_RL/README*.md
 !project_outputs_RL/*.txt
@@ -60,6 +66,22 @@ project_outputs_baseline/tensorboard_raw/
 !project_outputs_baseline/eval_results/*.png
 !project_outputs_baseline/scene_screenshots/
 !project_outputs_baseline/scene_screenshots/*.png
+
+!project_outputs_additional/README*.md
+!project_outputs_additional/additional_run_status.md
+!project_outputs_additional/RL/
+!project_outputs_additional/RL/*/
+!project_outputs_additional/RL/*/eval_results/
+!project_outputs_additional/RL/*/eval_results/*.csv
+!project_outputs_additional/RL/*/eval_results/*.png
+!project_outputs_additional/baseline/
+!project_outputs_additional/baseline/*/
+!project_outputs_additional/baseline/*/eval_results/
+!project_outputs_additional/baseline/*/eval_results/*.csv
+!project_outputs_additional/baseline/*/eval_results/*.png
+!project_outputs_additional/comparison/
+!project_outputs_additional/comparison/*.csv
+!project_outputs_additional/comparison/*.png
 
 # OS/editor
 .vscode/

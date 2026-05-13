@@ -195,6 +195,22 @@ def get_robot_mass(model: mujoco.MjModel) -> float:
     return float(np.sum(model.body_mass[1:]))
 
 
+def apply_runtime_perturbations(model: mujoco.MjModel, args: argparse.Namespace) -> None:
+    """Apply additional-evaluation perturbations without modifying source XML."""
+    if args.ground_friction is not None:
+        floor_id = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_GEOM, "floor")
+        if floor_id < 0:
+            raise RuntimeError("Could not find ground geom named floor for --ground_friction")
+        model.geom_friction[floor_id, 0] = float(args.ground_friction)
+
+    if args.base_mass_scale != 1.0:
+        base_body_id = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_BODY, "base_link")
+        if base_body_id < 0:
+            raise RuntimeError("Could not find body named base_link for --base_mass_scale")
+        model.body_mass[base_body_id] *= float(args.base_mass_scale)
+        model.body_inertia[base_body_id] *= float(args.base_mass_scale)
+
+
 def get_foot_contact_forces(model: mujoco.MjModel, data: mujoco.MjData, foot_geom_ids: dict[str, int]) -> tuple[dict[str, int], dict[str, float]]:
     contacts = {name: 0 for name in FOOT_NAMES}
     forces = {name: 0.0 for name in FOOT_NAMES}
@@ -299,7 +315,9 @@ def run_rollout(args: argparse.Namespace, actor: torch.nn.Module, encoder: torch
 
     model = mujoco.MjModel.from_xml_path(str(scene_file))
     model.opt.timestep = args.sim_dt
+    apply_runtime_perturbations(model, args)
     data = mujoco.MjData(model)
+    mujoco.mj_setConst(model, data)
     data.qpos[7:19] = DEFAULT_JOINT_ANGLES
     mujoco.mj_forward(model, data)
 
@@ -326,7 +344,7 @@ def run_rollout(args: argparse.Namespace, actor: torch.nn.Module, encoder: torch
             data.xfrc_applied[:, :] = 0.0
             if push_flag:
                 data.xfrc_applied[base_body_id, 1] = args.push_force
-            torques = compute_torques(data, action)
+            torques = args.torque_scale * compute_torques(data, action)
             data.ctrl[:12] = torques
             mujoco.mj_step(model, data)
 
@@ -390,6 +408,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--decimation", type=int, default=4)
     parser.add_argument("--min_base_height", type=float, default=0.18)
     parser.add_argument("--max_abs_roll_pitch", type=float, default=0.8)
+    parser.add_argument("--ground_friction", type=float, default=None)
+    parser.add_argument("--base_mass_scale", type=float, default=1.0)
+    parser.add_argument("--torque_scale", type=float, default=1.0)
     return parser.parse_args()
 
 

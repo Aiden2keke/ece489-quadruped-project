@@ -96,6 +96,20 @@ def compute_success(data: dict[str, np.ndarray]) -> int:
     return int(logged_ok and np.nanmax(fall) == 0 and final_ok)
 
 
+def compute_fall_time(data: dict[str, np.ndarray]) -> float:
+    fall = data.get("fall_flag")
+    if fall is None or fall.size == 0:
+        return float("nan")
+    fall_indices = np.flatnonzero(fall > 0.5)
+    if fall_indices.size == 0:
+        return float("nan")
+    time_values = data.get("time", np.arange(fall.size) * 0.005)
+    index = int(fall_indices[0])
+    if time_values.size <= index:
+        return float("nan")
+    return float(time_values[index])
+
+
 def compute_push_recovery(data: dict[str, np.ndarray]) -> float:
     push = data.get("external_push_flag")
     if push is None or push.size == 0 or np.nanmax(push) <= 0:
@@ -136,6 +150,7 @@ def analyze_trial(path: Path, eval_root: Path) -> dict[str, object]:
     distance = data.get("distance_traveled", np.asarray([float("nan")]))
     duration = data.get("time", np.asarray([float("nan")]))
     success = compute_success(data)
+    cot = compute_cot(data) if success else float("nan")
     return {
         "condition": condition,
         "trial_file": str(path),
@@ -145,10 +160,12 @@ def analyze_trial(path: Path, eval_root: Path) -> dict[str, object]:
         "rms_velocity_error": rms(cmd_vx[: base_vx.size] - base_vx) if cmd_vx.size and base_vx.size else float("nan"),
         "rms_roll": rms(roll),
         "rms_pitch": rms(pitch),
-        "cot": compute_cot(data),
+        "cot": cot,
         "success": success,
         "push_recovery_success": compute_push_recovery(data),
         "fall_any": int(np.nanmax(data.get("fall_flag", np.asarray([1.0]))) > 0),
+        "fall_time_s": compute_fall_time(data),
+        "controller_failure": int(path.with_suffix(".error.txt").exists()),
     }
 
 
@@ -167,6 +184,8 @@ def write_trial_metrics(rows: list[dict[str, object]], path: Path) -> None:
         "success",
         "push_recovery_success",
         "fall_any",
+        "fall_time_s",
+        "controller_failure",
     ]
     with path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -190,7 +209,16 @@ def write_summary(rows: list[dict[str, object]], path: Path) -> list[dict[str, o
     summary_rows = []
     for condition, condition_rows in sorted(by_condition.items()):
         summary: dict[str, object] = {"condition": condition, "num_trials": len(condition_rows)}
-        for metric in ["rms_velocity_error", "rms_roll", "rms_pitch", "cot", "success", "push_recovery_success"]:
+        for metric in [
+            "rms_velocity_error",
+            "rms_roll",
+            "rms_pitch",
+            "cot",
+            "success",
+            "push_recovery_success",
+            "fall_time_s",
+            "controller_failure",
+        ]:
             mean, std = mean_std(row[metric] for row in condition_rows)
             summary[f"{metric}_mean"] = mean
             summary[f"{metric}_std"] = std

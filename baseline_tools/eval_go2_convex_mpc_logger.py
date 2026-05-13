@@ -213,6 +213,24 @@ def get_robot_mass(model: Any) -> float:
     return float(np.sum(model.body_mass[1:]))
 
 
+def apply_runtime_perturbations(mj: Any, model: Any, data: Any, args: argparse.Namespace) -> None:
+    """Apply additional-evaluation perturbations without modifying source XML."""
+    if args.ground_friction is not None:
+        floor_id = mj.mj_name2id(model, mj.mjtObj.mjOBJ_GEOM, "floor")
+        if floor_id < 0:
+            raise RuntimeError("Could not find ground geom named floor for --ground_friction")
+        model.geom_friction[floor_id, 0] = float(args.ground_friction)
+
+    if args.base_mass_scale != 1.0:
+        base_body_id = mj.mj_name2id(model, mj.mjtObj.mjOBJ_BODY, "base_link")
+        if base_body_id < 0:
+            raise RuntimeError("Could not find body named base_link for --base_mass_scale")
+        model.body_mass[base_body_id] *= float(args.base_mass_scale)
+        model.body_inertia[base_body_id] *= float(args.base_mass_scale)
+
+    mj.mj_setConst(model, data)
+
+
 def get_foot_contact_forces(mj: Any, model: Any, data: Any, foot_geom_ids: dict[str, int]) -> tuple[dict[str, int], dict[str, float]]:
     contacts = {name: 0 for name in FOOT_NAMES}
     forces = {name: 0.0 for name in FOOT_NAMES}
@@ -375,6 +393,7 @@ def run_rollout(args: argparse.Namespace) -> Path:
     model = mj.MjModel.from_xml_path(str(scene_file))
     model.opt.timestep = SIM_DT
     data = mj.MjData(model)
+    apply_runtime_perturbations(mj, model, data, args)
     initialize_state(data, args.init_mode)
     mj.mj_forward(model, data)
 
@@ -420,7 +439,7 @@ def run_rollout(args: argparse.Namespace) -> Path:
             n_horizon = traj.N
             w_opt = sol["x"].full().flatten()
             u_opt = w_opt[12 * n_horizon :].reshape((12, n_horizon), order="F")
-        sim_tau_hold = compute_control_torque(go2, gait, leg_controller, u_opt[:, 0], time_now_s)
+        sim_tau_hold = args.torque_scale * compute_control_torque(go2, gait, leg_controller, u_opt[:, 0], time_now_s)
         log_tau_hold = sim_tau_hold.copy()
         ctrl_i += 1
 
@@ -568,6 +587,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--init_mode", choices=["baseline_demo", "rl_scene"], default="baseline_demo")
     parser.add_argument("--min_base_height", type=float, default=0.18)
     parser.add_argument("--max_abs_roll_pitch", type=float, default=0.8)
+    parser.add_argument("--ground_friction", type=float, default=None)
+    parser.add_argument("--base_mass_scale", type=float, default=1.0)
+    parser.add_argument("--torque_scale", type=float, default=1.0)
     return parser.parse_args()
 
 

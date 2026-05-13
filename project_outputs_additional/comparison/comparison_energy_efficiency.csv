@@ -1,0 +1,23 @@
+method,source_task,condition,success_rate,mean_CoT,std_CoT,mean_RMS_velocity_error,mean_RMS_roll,mean_RMS_pitch,notes
+RL,core_eval,flat_0p4,1.0,0.535811118126243,0.0,0.25824590601435343,0.046236042945854906,0.02166969202870936,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,core_eval,flat_0p4,1.0,2.44506014488815,0.0,0.03489361512838994,0.0069983403785759245,0.032944088146688214,CoT from successful full-length trials only; failed/partial trials excluded
+RL,core_eval,flat_0p8,1.0,0.5192632495584182,1.1702778228589004e-16,0.13975632990612316,0.013499343633408259,0.03866989656683185,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,core_eval,flat_0p8,0.0,nan,nan,0.21042153159138527,0.04401629755009619,0.11778238258735092,no successful full-length trials; CoT not reported
+RL,core_eval,push_flat_0p4,1.0,0.524144940893682,0.0,0.2709057868908661,0.04826439336289166,0.020195361060406484,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,core_eval,push_flat_0p4,1.0,2.447330055840598,0.0,0.03608791977197089,0.00800616554182511,0.03309676782650324,CoT from successful full-length trials only; failed/partial trials excluded
+RL,core_eval,push_terrain_0p4,1.0,0.5258016962597223,0.0,0.27123339553519055,0.04832497751645422,0.020072768846662915,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,core_eval,push_terrain_0p4,1.0,2.447330055840598,0.0,0.03608791977197089,0.00800616554182511,0.03309676782650324,CoT from successful full-length trials only; failed/partial trials excluded
+RL,core_eval,terrain_0p4,1.0,0.5732787129702321,0.0,0.25659606208454966,0.04562115607410793,0.026680471889241848,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,core_eval,terrain_0p4,1.0,2.44506014488815,0.0,0.03489361512838994,0.0069983403785759245,0.032944088146688214,CoT from successful full-length trials only; failed/partial trials excluded
+RL,core_eval,terrain_0p8,0.0,nan,nan,0.41163208286675335,1.0592049162979191,0.1618313312781499,no successful full-length trials; CoT not reported
+baseline,core_eval,terrain_0p8,0.0,nan,nan,0.21042153159138527,0.04401629755009619,0.11778238258735092,no successful full-length trials; CoT not reported
+RL,speed_sweep,flat_0p4,1.0,0.5117338873931889,0.0,0.20785628064630107,0.018490495549957027,0.03264745344006297,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_0p4,1.0,2.44506014488815,0.0,0.03489361512838994,0.0069983403785759245,0.032944088146688214,CoT from successful full-length trials only; failed/partial trials excluded
+RL,speed_sweep,flat_0p6,1.0,0.48269148376553594,0.0,0.1437128152586198,0.07415818497963558,0.026415428793561218,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_0p6,1.0,2.3669519283694838,0.0,0.07494553474922015,0.018166904641611116,0.040185304892921846,CoT from successful full-length trials only; failed/partial trials excluded
+RL,speed_sweep,flat_0p8,1.0,0.5407808893217448,0.0,0.1911591296668867,0.07504446567775956,0.03093704800480456,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_0p8,0.0,nan,nan,0.21060040522119197,0.04396419409130748,0.1183410264888745,no successful full-length trials; CoT not reported
+RL,speed_sweep,flat_1p0,1.0,0.5949400952139597,0.0,0.24159093380937796,0.05207599657147123,0.029834187894169133,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_1p0,0.0,nan,nan,0.43980329128816653,0.024392877238486634,0.10333979155836744,no successful full-length trials; CoT not reported
+RL,speed_sweep,flat_1p2,1.0,0.6183192633148813,0.0,0.27245939391102086,0.027835735028071695,0.028249625217051814,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_1p2,0.0,nan,nan,0.8101805815853688,0.01596325244183704,0.03661798216846264,no successful full-length trials; CoT not reported

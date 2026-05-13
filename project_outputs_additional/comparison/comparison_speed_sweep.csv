@@ -1,0 +1,11 @@
+method,source_task,condition,commanded_vx,num_trials,success_rate,controller_failure_rate,mean_CoT,std_CoT,mean_RMS_velocity_error,mean_RMS_roll,mean_RMS_pitch,fall_time_failed_mean,notes
+RL,speed_sweep,flat_0p4,0.4,10,1.0,0.0,0.5117338873931889,0.0,0.20785628064630107,0.018490495549957027,0.03264745344006297,nan,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_0p4,0.4,10,1.0,0.0,2.44506014488815,0.0,0.03489361512838994,0.0069983403785759245,0.032944088146688214,nan,CoT from successful full-length trials only; failed/partial trials excluded
+RL,speed_sweep,flat_0p6,0.5999999999999999,10,1.0,0.0,0.48269148376553594,0.0,0.1437128152586198,0.07415818497963558,0.026415428793561218,nan,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_0p6,0.5999999999999999,10,1.0,0.0,2.3669519283694838,0.0,0.07494553474922015,0.018166904641611116,0.040185304892921846,nan,CoT from successful full-length trials only; failed/partial trials excluded
+RL,speed_sweep,flat_0p8,0.8,10,1.0,0.0,0.5407808893217448,0.0,0.1911591296668867,0.07504446567775956,0.03093704800480456,nan,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_0p8,0.8,10,0.0,1.0,nan,nan,0.21060040522119197,0.04396419409130748,0.1183410264888745,1.5009999999999457,no successful full-length trials; CoT not reported
+RL,speed_sweep,flat_1p0,1.0,10,1.0,0.0,0.5949400952139597,0.0,0.24159093380937796,0.05207599657147123,0.029834187894169133,nan,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_1p0,1.0,10,0.0,1.0,nan,nan,0.43980329128816653,0.024392877238486634,0.10333979155836744,0.4410000000000004,no successful full-length trials; CoT not reported
+RL,speed_sweep,flat_1p2,1.1999999999999997,10,1.0,0.0,0.6183192633148813,0.0,0.27245939391102086,0.027835735028071695,0.028249625217051814,nan,CoT from successful full-length trials only; failed/partial trials excluded
+baseline,speed_sweep,flat_1p2,1.1999999999999997,10,0.0,1.0,nan,nan,0.8101805815853688,0.01596325244183704,0.03661798216846264,0.14100000000000007,no successful full-length trials; CoT not reported
