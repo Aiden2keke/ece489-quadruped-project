@@ -1,0 +1,3 @@
+RuntimeError: Error in Function::call for 'S' [OsqpInterface] at .../casadi/core/function.cpp:1466:
+Error in Function::call for 'S' [OsqpInterface] at .../casadi/core/function.cpp:362:
+.../casadi/core/conic.cpp:558: conic process failed. Set 'error_on_fail' option to false to ignore this error.

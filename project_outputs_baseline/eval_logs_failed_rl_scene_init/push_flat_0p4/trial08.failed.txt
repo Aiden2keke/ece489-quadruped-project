@@ -1,0 +1,1 @@
+trial 08 failed; keep any partial CSV and sidecar error file for analysis

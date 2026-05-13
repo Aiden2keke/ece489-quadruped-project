@@ -1,0 +1,45 @@
+# RL Configuration Summary
+
+Generated from local config/code. This file records configuration and artifact paths only; it does not contain fabricated training or evaluation results.
+
+| Section | Item | Value |
+| --- | --- | --- |
+| Project | robot model | Unitree Go2 |
+| Project | robot mass from URDF | 15.019 kg |
+| Project | simulator/training framework | Isaac Gym + legged_gym + rsl_rl PPO; MuJoCo used for scripted rollouts/evaluation |
+| Project | task name | go2 or go2_flat for flat; go2_rough or go2_challenging for rough terrain |
+| Environment | num_envs | 4096 |
+| Environment | observation dimension | 45 |
+| Environment | observation components | base angular velocity (3), projected gravity/body orientation (3), velocity command vx/vy/yaw (3), joint position offsets (12), joint velocities (12), previous actions (12) |
+| Environment | privileged critic observation dimension | 334 |
+| Environment | observation history length | 15 |
+| Environment | action dimension | 12 |
+| Environment | action definition | desired joint positions: q_des = default_joint_angle + action_scale * action, tracked by joint PD |
+| Control | PD gains | stiffness=joint: 20.0; damping=joint: 0.5 |
+| Control | action scale | 0.25 |
+| Control | control decimation | 4 |
+| Control | sim dt | 0.005 |
+| Control | policy/control dt | 0.02 |
+| Environment | episode length | 20 s |
+| PPO | runner | algorithm_class_name: PPO; checkpoint: -1; experiment_name: rough_go2; load_run: -1; max_iterations: 7500; num_steps_per_env: 24; policy_class_name: ActorCritic; resume: False; resume_path: None; run_name: ; save_interval: 50; student_reinforcing: False |
+| PPO | hyperparameters | clip_param: 0.2; desired_kl: 0.01; entropy_coef: 0.01; gamma: 0.99; lam: 0.95; learning_rate: 0.001; max_grad_norm: 1.0; num_learning_epochs: 5; num_mini_batches: 4; schedule: adaptive; use_clipped_value_loss: True; value_loss_coef: 1.0 |
+| Network | actor architecture | input 45+32; hidden [512, 256, 128]; output 12 |
+| Network | critic architecture | input 334+32; hidden [512, 256, 128]; output 1 |
+| Network | proprioceptive encoder | input 45*15; hidden [512, 256, 128]; latent 32 |
+| Network | privileged encoder | input 334; hidden [512, 256, 128]; latent 32 |
+| Rewards | reward terms and weights | action_rate: -0.012; action_smoothness: -0.0012; ang_vel_xy: -0.05; base_height: -1.0; collision: -1.2; dof_acc: -3e-07; dof_pos_limits: -10.0; dof_vel: -0.0; feet_air_time: 0.5; feet_clearance: -0.5; feet_stumble: -0.0; lin_vel_z: -2.0; orientation: -1.2; stand_still: -0.0; termination: -1.0; torques: -0.0002; tracking_ang_vel: 0.5; tracking_lin_vel: 1.2 |
+| Rewards | tracking sigma | 0.25 |
+| Rewards | base height target | 0.25 |
+| Rewards | foot clearance target | 0.08 |
+| Domain randomization | friction range | [0.5, 1.2] |
+| Domain randomization | base mass added range | [-3.0, 3.0] |
+| Domain randomization | motor strength range | [0.9, 1.1] |
+| Domain randomization | push randomization | enabled=True; interval_s=15; max_push_vel_xy=1.0 |
+| Domain randomization | Kp/Kd randomization | Kp enabled=True range=[0.8, 1.2]; Kd enabled=True range=[0.8, 1.2] |
+| Domain randomization | action delay | enabled=True; delay_ms_range=[0, 10] |
+| Terrain | flat settings | border_size: 25; curriculum: False; dynamic_friction: 1.0; horizontal_scale: 0.1; max_init_terrain_level: 5; measure_heights: True; measured_points_x: [-0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]; measured_points_y: [-0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5]; mesh_type: plane; num_cols: 20; num_rows: 10; restitution: 0.0; selected: False; slope_treshold: 0.7; static_friction: 1.0; terrain_kwargs: None; terrain_length: 8.0; terrain_proportions: [0.2, 0.3, 0.1, 0.1, 0.3, 0.0, 0.0, 0.0]; terrain_width: 8.0; vertical_scale: 0.005 |
+| Terrain | challenging terrain settings | border_size: 25; curriculum: True; curriculum_early_done_fraction: 0.6; curriculum_failures_before_level_down: 1; curriculum_min_episode_fraction: 0.85; curriculum_successes_before_level_up: 3; curriculum_tracking_reward_down: 0.35; curriculum_tracking_reward_up: 0.6; dynamic_friction: 1.0; horizontal_scale: 0.1; max_init_terrain_level: 0; measure_heights: True; measured_points_x: [-0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]; measured_points_y: [-0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5]; mesh_type: trimesh; num_cols: 20; num_rows: 10; restitution: 0.0; selected: False; slope_treshold: 0.7; static_friction: 1.0; terrain_kwargs: None; terrain_length: 8.0; terrain_proportions: [0.2, 0.3, 0.1, 0.1, 0.3, 0.0, 0.0, 0.0]; terrain_width: 8.0; vertical_scale: 0.005 |
+| Artifacts | checkpoint path | /home/yd/ece489/project/rsl_rl_teacher_student/legged_gym/logs/rough_go2/TS_re3/model_9000.pt (exists) |
+| Artifacts | exported policy path | /home/yd/ece489/project/rsl_rl_teacher_student/legged_gym/logs/rough_go2/exported/policies/policy_1.pt (exists) |
+| Notes | terrain status | Current go2/go2_flat keeps flat training/play. go2_rough/go2_challenging enables legged_gym trimesh rough terrain. |
+| Notes | MuJoCo evaluation scenes | mujoco_test/data/go2/scene.xml for flat; mujoco_test/data/go2/scene_terrain.xml for terrain. |

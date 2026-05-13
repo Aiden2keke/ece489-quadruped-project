@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Conda / env
+.env
+.venv/
+venv/
+env/
+
+# Logs and temporary outputs
+*.log
+tmp/
+temp/
+.cache/
+
+# Large training outputs / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tfevents*
+events.out.tfevents*
+wandb/
+runs/
+
+# Project generated outputs
+project_outputs/
+project_outputs_RL/eval_logs/
+project_outputs_RL/train_curves_csv/
+project_outputs_RL/tensorboard_raw/
+project_outputs_baseline/eval_logs/
+project_outputs_baseline/train_curves_csv/
+project_outputs_baseline/tensorboard_raw/
+
+# Keep figures, summaries, and README files if needed
+!project_outputs_RL/README*.md
+!project_outputs_RL/*.txt
+!project_outputs_RL/*.csv
+!project_outputs_RL/figures/
+!project_outputs_RL/figures/*.png
+!project_outputs_RL/eval_results/
+!project_outputs_RL/eval_results/*.csv
+!project_outputs_RL/eval_results/*.png
+!project_outputs_RL/scene_screenshots/
+!project_outputs_RL/scene_screenshots/*.png
+
+!project_outputs_baseline/README*.md
+!project_outputs_baseline/*.txt
+!project_outputs_baseline/*.csv
+!project_outputs_baseline/figures/
+!project_outputs_baseline/figures/*.png
+!project_outputs_baseline/eval_results/
+!project_outputs_baseline/eval_results/*.csv
+!project_outputs_baseline/eval_results/*.png
+!project_outputs_baseline/scene_screenshots/
+!project_outputs_baseline/scene_screenshots/*.png
+
+# OS/editor
+.vscode/
+.idea/
+.DS_Store
