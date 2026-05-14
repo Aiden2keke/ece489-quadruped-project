@@ -1,5 +1,5 @@
 CMakeFiles/state_machine_example.dir/example/state_machine/main.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/main.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -190,7 +190,7 @@ CMakeFiles/state_machine_example.dir/example/state_machine/main.cpp.o: \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/optional \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/robot_controller.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/robot_controller.hpp \
  /usr/include/c++/11/math.h /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -742,11 +742,11 @@ CMakeFiles/state_machine_example.dir/example/state_machine/main.cpp.o: \
  /usr/local/include/unitree/common/dds/dds_native.hpp \
  /usr/local/include/unitree/common/dds/dds_traits.hpp \
  /usr/local/include/unitree/robot/channel/channel_subscriber.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/state_machine.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/gamepad.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/robot_interface.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/comm.h \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/conversion.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/user_controller.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/cfg.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/state_machine.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/gamepad.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/robot_interface.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/comm.h \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/conversion.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/user_controller.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/state_machine/cfg.hpp \
  /usr/local/include/unitree/common/json/jsonize.hpp

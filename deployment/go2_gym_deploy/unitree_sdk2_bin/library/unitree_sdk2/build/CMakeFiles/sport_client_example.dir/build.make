@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2
+CMAKE_SOURCE_DIR = /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build
+CMAKE_BINARY_DIR = /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sport_client_example.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/sport_client_example.dir/flags.make
 CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o: CMakeFiles/sport_client_example.dir/flags.make
 CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o: ../example/client/sport_client_example.cpp
 CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o: CMakeFiles/sport_client_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o -MF CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o.d -o CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o -c /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/client/sport_client_example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o -MF CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o.d -o CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o -c /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/client/sport_client_example.cpp
 
 CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/client/sport_client_example.cpp > CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/client/sport_client_example.cpp > CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.i
 
 CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/client/sport_client_example.cpp -o CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/client/sport_client_example.cpp -o CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.s
 
 # Object files for target sport_client_example
 sport_client_example_OBJECTS = \
@@ -93,7 +93,7 @@ sport_client_example_EXTERNAL_OBJECTS =
 sport_client_example: CMakeFiles/sport_client_example.dir/example/client/sport_client_example.cpp.o
 sport_client_example: CMakeFiles/sport_client_example.dir/build.make
 sport_client_example: CMakeFiles/sport_client_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sport_client_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sport_client_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sport_client_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +105,6 @@ CMakeFiles/sport_client_example.dir/clean:
 .PHONY : CMakeFiles/sport_client_example.dir/clean
 
 CMakeFiles/sport_client_example.dir/depend:
-	cd /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles/sport_client_example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles/sport_client_example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sport_client_example.dir/depend
 

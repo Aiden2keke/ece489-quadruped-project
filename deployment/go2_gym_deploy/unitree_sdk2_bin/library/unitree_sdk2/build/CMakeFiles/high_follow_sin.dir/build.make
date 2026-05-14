@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2
+CMAKE_SOURCE_DIR = /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build
+CMAKE_BINARY_DIR = /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/high_follow_sin.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/high_follow_sin.dir/flags.make
 CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o: CMakeFiles/high_follow_sin.dir/flags.make
 CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o: ../example/high_level/follow_sin.cpp
 CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o: CMakeFiles/high_follow_sin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o -MF CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o.d -o CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o -c /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/high_level/follow_sin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o -MF CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o.d -o CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o -c /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/high_level/follow_sin.cpp
 
 CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/high_level/follow_sin.cpp > CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/high_level/follow_sin.cpp > CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.i
 
 CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/high_level/follow_sin.cpp -o CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/high_level/follow_sin.cpp -o CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.s
 
 # Object files for target high_follow_sin
 high_follow_sin_OBJECTS = \
@@ -93,7 +93,7 @@ high_follow_sin_EXTERNAL_OBJECTS =
 high_follow_sin: CMakeFiles/high_follow_sin.dir/example/high_level/follow_sin.cpp.o
 high_follow_sin: CMakeFiles/high_follow_sin.dir/build.make
 high_follow_sin: CMakeFiles/high_follow_sin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable high_follow_sin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable high_follow_sin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/high_follow_sin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +105,6 @@ CMakeFiles/high_follow_sin.dir/clean:
 .PHONY : CMakeFiles/high_follow_sin.dir/clean
 
 CMakeFiles/high_follow_sin.dir/depend:
-	cd /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles/high_follow_sin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles/high_follow_sin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/high_follow_sin.dir/depend
 

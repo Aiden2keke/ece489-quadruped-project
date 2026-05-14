@@ -19,6 +19,12 @@ tmp/
 temp/
 .cache/
 
+# Deployment generated outputs
+deployment/logs/
+deployment/go2_gym_deploy/build/
+deployment/go2_gym_deploy/scripts/obs_list.npy
+deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/
+
 # Large training outputs / checkpoints
 *.pt
 *.pth
@@ -43,6 +49,18 @@ project_outputs_additional/RL/*/eval_logs/
 project_outputs_additional/baseline/*/eval_logs/
 project_outputs_additional/tmp_models/
 project_outputs_additional.zip
+
+# Real robot deployment outputs
+real_robot_outputs/logs/
+real_robot_outputs/figures/
+real_robot_outputs/summary/trial_metrics.csv
+real_robot_outputs/summary/summary_metrics.csv
+real_robot_outputs/metadata/*.yaml
+!real_robot_outputs/metadata/trial_metadata_template.yaml
+real_robot_outputs/**/*.mp4
+real_robot_outputs/**/*.mov
+real_robot_outputs/**/*.avi
+real_robot_outputs/**/*.mkv
 
 # Keep figures, summaries, and README files if needed
 !project_outputs_RL/README*.md

@@ -1,0 +1,50 @@
+stage_1:
+  name: stand
+  control_mode: original_deploy_policy
+  logger: lcm_side_logger
+  cmd_note: keep remote sticks neutral; do not use deploy_policy internal logging
+  duration_s: 10
+  trials: 3
+  status: completed
+  description: Static standing test. Check roll/pitch, joint state, PD target and joint tracking from passive LCM logs.
+  log_dir: /home/yd/ece489/project/rsl_rl_teacher_student/real_robot_outputs/logs/side_logger/stand
+
+stage_2:
+  name: remote_control_walk
+  control_mode: original_deploy_policy
+  logger: lcm_side_logger
+  duration_s: 60
+  trials: 1-3
+  terrain: indoor flat ground
+  description: Operator controls Go2 with the remote controller while original deploy_policy.py runs; side logger passively records LCM data.
+  log_dir: /home/yd/ece489/project/rsl_rl_teacher_student/real_robot_outputs/logs/side_logger/remote_control_walk
+
+stage_3:
+  name: push_light
+  control_mode: original_deploy_policy
+  logger: lcm_side_logger
+  duration_s: 30
+  trials: 1-3
+  terrain: indoor flat ground
+  description: Operator lightly kicks or pushes the robot during original remote-controlled policy; side logger records LCM data and push time is recorded manually from video.
+  push_type: manual light kick or light push
+  push_time: record manually in metadata after checking the phone video
+  comparison_note: This is not a precise 40 N MuJoCo push and should only be used as a qualitative disturbance test.
+  log_dir: /home/yd/ece489/project/rsl_rl_teacher_student/real_robot_outputs/logs/side_logger/push_light
+
+deprecated_stages:
+  deploy_policy_internal_logging:
+    status: deprecated
+    reason: Intrusive logging inside deploy_policy.py/deployment_runner.py may affect the real-time control path. Use lcm_side_logger.py instead.
+  flat_vx0p1:
+    status: deprecated
+    reason: Fixed-speed low-speed walking was removed because per-speed real-robot collection is too cumbersome.
+  flat_vx0p2:
+    status: deprecated
+    reason: Replaced by remote_control_walk.
+  flat_vx0p4:
+    status: deprecated
+    reason: Replaced by remote_control_walk.
+  speed_sweep:
+    status: deprecated
+    reason: Fixed-speed sweep is no longer part of the recommended real-robot workflow.

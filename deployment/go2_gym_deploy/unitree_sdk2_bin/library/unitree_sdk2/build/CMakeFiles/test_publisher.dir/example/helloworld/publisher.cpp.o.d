@@ -1,5 +1,5 @@
 CMakeFiles/test_publisher.dir/example/helloworld/publisher.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/helloworld/publisher.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/helloworld/publisher.cpp \
  /usr/include/stdc-predef.h \
  /usr/local/include/unitree/robot/channel/channel_publisher.hpp \
  /usr/local/include/unitree/robot/channel/channel_factory.hpp \
@@ -705,4 +705,4 @@ CMakeFiles/test_publisher.dir/example/helloworld/publisher.cpp.o: \
  /usr/local/include/unitree/common/dds/dds_qos_policy.hpp \
  /usr/local/include/unitree/common/dds/dds_native.hpp \
  /usr/local/include/unitree/common/dds/dds_traits.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/helloworld/HelloWorldData.hpp
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/helloworld/HelloWorldData.hpp

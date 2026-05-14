@@ -1,5 +1,5 @@
 CMakeFiles/h1_arm_sdk_dds_example.dir/example/humanoid/high_level/h1_arm_sdk_dds_example.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_arm_sdk_dds_example.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_arm_sdk_dds_example.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/array \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

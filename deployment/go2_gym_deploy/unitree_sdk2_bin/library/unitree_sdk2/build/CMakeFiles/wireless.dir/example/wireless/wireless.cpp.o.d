@@ -1,5 +1,5 @@
 CMakeFiles/wireless.dir/example/wireless/wireless.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/wireless/wireless.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/wireless/wireless.cpp \
  /usr/include/stdc-predef.h \
  /usr/local/include/unitree/robot/channel/channel_publisher.hpp \
  /usr/local/include/unitree/robot/channel/channel_factory.hpp \

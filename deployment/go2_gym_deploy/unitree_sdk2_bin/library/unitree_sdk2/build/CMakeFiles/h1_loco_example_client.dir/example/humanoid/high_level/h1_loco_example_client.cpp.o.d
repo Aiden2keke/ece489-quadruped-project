@@ -1,5 +1,5 @@
 CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_loco_example_client.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_loco_example_client.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/ddscxx -I/usr/local/include/iceoryx/v2.0.2 -I/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types
+CXX_INCLUDES = -I/usr/local/include/ddscxx -I/usr/local/include/iceoryx/v2.0.2 -I/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types
 
 CXX_FLAGS = 
 

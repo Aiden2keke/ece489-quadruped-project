@@ -1,0 +1,19 @@
+robot: Unitree Go2
+policy_type: teacher-student PPO
+deployment_entry: /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/scripts/deploy_policy.py
+default_label: gait-conditioned-agility/pretrain-go2/train
+run_search_root: /home/yd/ece489/project/rsl_rl_teacher_student/deployment/runs
+current_expected_files:
+  parameters: deployment/runs/gait-conditioned-agility/pretrain-go2/train/*/parameters.pkl
+  actor: deployment/runs/gait-conditioned-agility/pretrain-go2/train/*/checkpoints/experiment/actor/actor_oracle_TS_re3.pth
+  proprio_encoder: deployment/runs/gait-conditioned-agility/pretrain-go2/train/*/checkpoints/experiment/proprio_encoder/proprio_oracle_TS_re3.pth
+observation:
+  deployment_obs_dim: 45
+  history_steps: 15
+  csv_obs_columns: obs_1 ... obs_N，N 由实际 policy observation 维度自动决定。
+action:
+  action_dim: 12
+  target_joint_pos_columns: target_joint_pos_1 ... target_joint_pos_12
+notes:
+  - 如果更换 policy checkpoint，先更新本文件和每个 trial 的 metadata。
+  - 当前 deploy_policy.py 默认只加载 actor_oracle_TS_re3.pth 和 proprio_oracle_TS_re3.pth；不会 fallback 到 ece489。

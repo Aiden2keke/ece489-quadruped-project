@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/lcm_position_go2.cpp" "CMakeFiles/lcm_position_go2.dir/unitree_sdk2_bin/lcm_position_go2.cpp.o" "gcc" "CMakeFiles/lcm_position_go2.dir/unitree_sdk2_bin/lcm_position_go2.cpp.o.d"
+  "/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/lcm_position_go2.cpp" "CMakeFiles/lcm_position_go2.dir/unitree_sdk2_bin/lcm_position_go2.cpp.o" "gcc" "CMakeFiles/lcm_position_go2.dir/unitree_sdk2_bin/lcm_position_go2.cpp.o.d"
   )
 
 # Targets to which this target links.

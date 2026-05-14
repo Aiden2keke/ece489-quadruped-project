@@ -1,5 +1,5 @@
 CMakeFiles/lcm_position_go2.dir/unitree_sdk2_bin/lcm_position_go2.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/lcm_position_go2.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/lcm_position_go2.cpp \
  /usr/include/stdc-predef.h /usr/local/include/lcm/lcm-cpp.hpp \
  /usr/include/c++/11/cstdio \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -152,12 +152,12 @@ CMakeFiles/lcm_position_go2.dir/unitree_sdk2_bin/lcm_position_go2.cpp.o: \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/local/include/lcm/lcm-cpp-impl.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types/leg_control_data_lcmt.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types/leg_control_data_lcmt.hpp \
  /usr/local/include/lcm/lcm_coretypes.h /usr/include/c++/11/stdlib.h \
  /usr/include/string.h /usr/include/strings.h \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types/state_estimator_lcmt.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types/rc_command_lcmt.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types/pd_tau_targets_lcmt.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types/state_estimator_lcmt.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types/rc_command_lcmt.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/lcm_types/pd_tau_targets_lcmt.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \

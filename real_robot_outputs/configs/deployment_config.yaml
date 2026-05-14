@@ -1,0 +1,33 @@
+project_root: /home/yd/ece489/project/rsl_rl_teacher_student
+deployment_root: /home/yd/ece489/project/rsl_rl_teacher_student/deployment
+go2_gym_deploy_root: /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy
+real_robot_output_root: /home/yd/ece489/project/rsl_rl_teacher_student/real_robot_outputs
+
+lcm:
+  url: udpm://239.255.76.67:7667?ttl=255
+
+network:
+  robot_ip: 192.168.123.161
+  pc_wired_ipv4_address: 192.168.123.10
+  interface_example: enp52s0
+  interface_note: enp52s0 只是示例，实机部署前必须用 ip addr 或 ifconfig 确认本机实际有线网口名。
+
+policy:
+  default_label: gait-conditioned-agility/pretrain-go2/train
+  default_experiment_name: example_experiment
+  default_python_entry: /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/scripts/deploy_policy.py
+  original_command_kept: true
+
+control:
+  control_dt_s: 0.02
+  nominal_control_frequency_hz: 50
+  low_level_bridge_binary: /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/lcm_position_go2
+  receive_test_binary: /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/lcm_receive
+
+logging:
+  recommended_logger: /home/yd/ece489/project/rsl_rl_teacher_student/real_robot_outputs/scripts/lcm_side_logger.py
+  mode: passive_lcm_side_logger
+  deprecated: do not use deploy_policy.py internal --enable_logging for real-robot control tests
+  default_log_dir: /home/yd/ece489/project/rsl_rl_teacher_student/real_robot_outputs/logs/side_logger
+  unavailable_fields_are_nan: true
+  notes: side logger 只监听 LCM，不发送控制命令；policy obs/action/inference latency 不是 LCM topic，side logger CSV 中通常没有这些字段。

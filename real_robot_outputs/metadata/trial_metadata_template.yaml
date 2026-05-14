@@ -1,0 +1,35 @@
+trial_name:
+date:
+operator:
+robot: Unitree Go2
+policy_checkpoint:
+policy_type: teacher-student PPO
+deployment_code_version:
+terrain: indoor flat ground
+experiment_stage:
+command_mode:
+remote_control:
+logger: lcm_side_logger
+logger_csv:
+logger_notes:
+cmd_vx:
+cmd_vy:
+cmd_yaw:
+planned_duration:
+actual_duration:
+control_frequency:
+policy_frequency:
+pd_kp:
+pd_kd:
+action_scale:
+battery_start:
+battery_end:
+success:
+fall:
+manual_stop:
+emergency_stop:
+video_filename:
+push_time:
+push_direction:
+push_strength_description:
+notes:

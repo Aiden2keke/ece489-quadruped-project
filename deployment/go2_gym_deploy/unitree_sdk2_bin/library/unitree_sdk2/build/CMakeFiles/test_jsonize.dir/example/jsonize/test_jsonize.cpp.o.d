@@ -1,5 +1,5 @@
 CMakeFiles/test_jsonize.dir/example/jsonize/test_jsonize.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/jsonize/test_jsonize.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/jsonize/test_jsonize.cpp \
  /usr/include/stdc-predef.h \
  /usr/local/include/unitree/common/json/jsonize.hpp \
  /usr/local/include/unitree/common/json/json.hpp \

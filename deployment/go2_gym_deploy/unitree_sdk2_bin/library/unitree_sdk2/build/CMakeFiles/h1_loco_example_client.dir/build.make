@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2
+CMAKE_SOURCE_DIR = /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build
+CMAKE_BINARY_DIR = /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/h1_loco_example_client.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/h1_loco_example_client.dir/flags.make
 CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o: CMakeFiles/h1_loco_example_client.dir/flags.make
 CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o: ../example/humanoid/high_level/h1_loco_example_client.cpp
 CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o: CMakeFiles/h1_loco_example_client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o -MF CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o.d -o CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o -c /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_loco_example_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o -MF CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o.d -o CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o -c /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_loco_example_client.cpp
 
 CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_loco_example_client.cpp > CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_loco_example_client.cpp > CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.i
 
 CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_loco_example_client.cpp -o CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/high_level/h1_loco_example_client.cpp -o CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.s
 
 # Object files for target h1_loco_example_client
 h1_loco_example_client_OBJECTS = \
@@ -93,7 +93,7 @@ h1_loco_example_client_EXTERNAL_OBJECTS =
 h1_loco_example_client: CMakeFiles/h1_loco_example_client.dir/example/humanoid/high_level/h1_loco_example_client.cpp.o
 h1_loco_example_client: CMakeFiles/h1_loco_example_client.dir/build.make
 h1_loco_example_client: CMakeFiles/h1_loco_example_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable h1_loco_example_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable h1_loco_example_client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/h1_loco_example_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +105,6 @@ CMakeFiles/h1_loco_example_client.dir/clean:
 .PHONY : CMakeFiles/h1_loco_example_client.dir/clean
 
 CMakeFiles/h1_loco_example_client.dir/depend:
-	cd /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles/h1_loco_example_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2 /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/build/CMakeFiles/h1_loco_example_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/h1_loco_example_client.dir/depend
 

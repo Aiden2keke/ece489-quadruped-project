@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy
+CMAKE_SOURCE_DIR = /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/build
+CMAKE_BINARY_DIR = /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -83,14 +83,14 @@ clean: CMakeFiles/lcm_receive.dir/clean
 CMakeFiles/lcm_position_go2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcm_position_go2.dir/build.make CMakeFiles/lcm_position_go2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcm_position_go2.dir/build.make CMakeFiles/lcm_position_go2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles --progress-num=1,2 "Built target lcm_position_go2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles --progress-num=1,2 "Built target lcm_position_go2"
 .PHONY : CMakeFiles/lcm_position_go2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lcm_position_go2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lcm_position_go2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles 0
 .PHONY : CMakeFiles/lcm_position_go2.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/lcm_position_go2.dir/clean:
 CMakeFiles/lcm_receive.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcm_receive.dir/build.make CMakeFiles/lcm_receive.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcm_receive.dir/build.make CMakeFiles/lcm_receive.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles --progress-num=3,4 "Built target lcm_receive"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles --progress-num=3,4 "Built target lcm_receive"
 .PHONY : CMakeFiles/lcm_receive.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lcm_receive.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lcm_receive.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/build/CMakeFiles 0
 .PHONY : CMakeFiles/lcm_receive.dir/rule
 
 # Convenience name for target.

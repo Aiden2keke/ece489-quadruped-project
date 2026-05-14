@@ -1,5 +1,5 @@
 CMakeFiles/advanced_gamepad.dir/example/advanced_gamepad/main.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/advanced_gamepad/main.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/advanced_gamepad/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/mutex \
  /usr/include/c++/11/tuple /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -705,7 +705,7 @@ CMakeFiles/advanced_gamepad.dir/example/advanced_gamepad/main.cpp.o: \
  /usr/local/include/unitree/common/dds/dds_qos_policy.hpp \
  /usr/local/include/unitree/common/dds/dds_native.hpp \
  /usr/local/include/unitree/common/dds/dds_traits.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/advanced_gamepad/advanced_gamepad.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/advanced_gamepad/advanced_gamepad.hpp \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \

@@ -15,6 +15,9 @@ import torch.nn as nn
 import numpy as np
 
 
+with_load_estimator = False
+
+
 class Actor(nn.Module):
     def __init__(self, num_obs, num_actions, hidden_dims=[512, 256, 128]):
         super(Actor, self).__init__()
@@ -103,7 +106,7 @@ def load_and_run_policy(label, experiment_name, max_vel=1.0, max_yaw_vel=1.0):
 
     deployment_runner.run(max_steps=max_steps, logging=True)
 
-def load_policy(logdir):
+def load_policy(logdir, print_debug_shapes=True, record_obs_list=True):
     import os
 
     # try ------------------
@@ -129,12 +132,22 @@ def load_policy(logdir):
     
     else:
         actor = Actor(num_obs=77, num_actions=12) #num_observations + num_privileged_latent = 45 + 32 = 77
-        actor.load_state_dict(torch.load(logdir + '/checkpoints/experiment/actor/actor_oracle_TS_re3.pth'))
+        # actor_path = os.path.join(logdir, 'checkpoints/experiment/actor/actor_oracle_TS_re3.pth')
+        # proprio_path = os.path.join(logdir, 'checkpoints/experiment/proprio_encoder/proprio_oracle_TS_re3.pth')
+        actor_path = os.path.join(logdir, 'checkpoints/experiment/actor/actor_oracle_ece489.pth')
+        proprio_path = os.path.join(logdir, 'checkpoints/experiment/proprio_encoder/proprio_oracle_ece489.pth')
+        if not os.path.isfile(actor_path):
+            raise FileNotFoundError(f"TS_re3 actor checkpoint not found: {actor_path}")
+        if not os.path.isfile(proprio_path):
+            raise FileNotFoundError(f"TS_re3 proprio encoder checkpoint not found: {proprio_path}")
+        print(f"Loading actor checkpoint: {actor_path}")
+        actor.load_state_dict(torch.load(actor_path))
         actor = actor.to('cpu')
         actor.eval()
         
         proprio_encoder = MLPEncoder(input_dim=15*45)
-        proprio_encoder.load_state_dict(torch.load(logdir + '/checkpoints/experiment/proprio_encoder/proprio_oracle_TS_re3.pth'))
+        print(f"Loading proprio encoder checkpoint: {proprio_path}")
+        proprio_encoder.load_state_dict(torch.load(proprio_path))
         proprio_encoder = proprio_encoder.to('cpu')
         # print(proprio_encoder)
         proprio_encoder.eval()
@@ -151,10 +164,11 @@ def load_policy(logdir):
         global with_load_estimator
 
         time_step += 1
-        obs_list.append(obs["obs"].to('cpu'))
-        if time_step % 20 == 0:
-            # print("obs recorded")
-            np.save("obs_list.npy", np.array(obs_list))
+        if record_obs_list:
+            obs_list.append(obs["obs"].to('cpu'))
+            if time_step % 20 == 0:
+                # print("obs recorded")
+                np.save("obs_list.npy", np.array(obs_list))
         
         if with_load_estimator:
             proprio_latent = proprio_encoder(obs["obs_history"].to('cpu'))
@@ -165,7 +179,8 @@ def load_policy(logdir):
             # info['proprio_latent'] = proprio_latent
         else:
             proprio_latent = proprio_encoder(obs["obs_history"].to('cpu'))
-            print("obs['obs_history'] shape:", obs["obs_history"].shape)
+            if print_debug_shapes:
+                print("obs['obs_history'] shape:", obs["obs_history"].shape)
             actor_input = torch.cat((obs["obs"].to('cpu'), torch.nn.functional.normalize(proprio_latent, p=2, dim=-1)), dim=-1)
             action = actor(actor_input)
 

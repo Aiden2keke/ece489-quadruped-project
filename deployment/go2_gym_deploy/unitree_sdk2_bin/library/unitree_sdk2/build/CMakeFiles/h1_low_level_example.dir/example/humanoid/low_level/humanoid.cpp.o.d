@@ -1,7 +1,7 @@
 CMakeFiles/h1_low_level_example.dir/example/humanoid/low_level/humanoid.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/humanoid.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/humanoid.cpp \
  /usr/include/stdc-predef.h \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/humanoid.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/humanoid.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -715,7 +715,7 @@ CMakeFiles/h1_low_level_example.dir/example/humanoid/low_level/humanoid.cpp.o: \
  /usr/local/include/unitree/idl/go2/BmsState_.hpp \
  /usr/local/include/unitree/idl/go2/IMUState_.hpp \
  /usr/local/include/unitree/idl/go2/MotorState_.hpp \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/base_state.h \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/data_buffer.hpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/base_state.h \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/data_buffer.hpp \
  /usr/include/c++/11/shared_mutex \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/motors.hpp
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/humanoid/low_level/motors.hpp

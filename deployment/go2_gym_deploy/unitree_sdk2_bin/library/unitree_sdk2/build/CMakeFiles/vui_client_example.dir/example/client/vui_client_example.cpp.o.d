@@ -1,5 +1,5 @@
 CMakeFiles/vui_client_example.dir/example/client/vui_client_example.cpp.o: \
- /home/yd/program/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/client/vui_client_example.cpp \
+ /home/yd/ece489/project/rsl_rl_teacher_student/deployment/go2_gym_deploy/unitree_sdk2_bin/library/unitree_sdk2/example/client/vui_client_example.cpp \
  /usr/include/stdc-predef.h \
  /usr/local/include/unitree/robot/go2/vui/vui_client.hpp \
  /usr/local/include/unitree/robot/client/client.hpp \
